@@ -1,0 +1,14 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: deployment-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual-deployment
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/host_mnt/c/Users/vlado/.docker/Volumes/deployment-pv-volume"
