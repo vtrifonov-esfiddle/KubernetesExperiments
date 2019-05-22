@@ -13,3 +13,5 @@ kubectl apply -f .\nginx-deployment.yaml
 copy index.html "\\$env:COMPUTERNAME\c\Users\$env:USERNAME\.docker\Volumes\deployment-pv-volume"
 start-process http://localhost:32605
 ```
+
+## [K8s persistent volume storage](https://v1-10.docs.kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
